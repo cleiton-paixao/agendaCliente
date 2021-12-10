@@ -1,0 +1,59 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Tempo de geração: 04-Dez-2021 às 20:55
+-- Versão do servidor: 10.4.20-MariaDB
+-- versão do PHP: 8.0.8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Banco de dados: `java-crud`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `customers`
+--
+
+CREATE TABLE `customers` (
+  `id` int(11) NOT NULL,
+  `name` varchar(155) NOT NULL,
+  `mail` varchar(155) NOT NULL,
+  `phone` varchar(155) NOT NULL,
+  `cpf` varchar(155) NOT NULL,
+  `empresa` varchar(155) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `customers`
+--
+
+INSERT INTO `customers` (`id`, `name`, `mail`, `phone`, `cpf`, `empresa`) VALUES
+(1, 'ELVIS SOARES teste atualização', ' ELVISSOARES1999@GMAIL.COM teste atualização', ' ELVISSOARES1999@GMAIL.COM teste atualização', '71967858', 'teste');
+
+--
+-- Índices para tabelas despejadas
+--
+
+--
+-- Índices para tabela `customers`
+--
+ALTER TABLE `customers`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de tabelas despejadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `customers`
+--
+ALTER TABLE `customers`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;
